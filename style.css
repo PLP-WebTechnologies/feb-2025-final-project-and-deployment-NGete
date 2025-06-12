@@ -1,0 +1,65 @@
+/* Header */
+header {
+   background-color: skyblue;      /* Steel blue */
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(70,130,180,0.08);
+  margin-bottom: 1.5rem;
+}
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  color: #e3f2fd;
+}
+
+/* Reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: skyblue;
+}
+img { max-width: 100%; display: block; }
+
+
+/* Navigation */
+.navbar { display:flex; justify-content: space-between; align-items: center; padding:1rem; background:#333; }
+.navbar .logo { color: #4a78c7; text-decoration:none; font-size:1.5rem; }
+.nav-links { list-style:none; display:flex; gap:1rem; }
+.nav-links a { color: #7ea9e9; text-decoration:none; }
+
+/* Hero */
+.hero { text-align:center; padding:4rem 1rem; background: #f4f4f4; }
+.hero h1 { font-size:2.5rem; margin-bottom:1rem; }
+
+/* Slider */
+.slider-container { position: relative; max-width:800px; margin:2rem auto; overflow:hidden; }
+.slider { display:flex; transition: transform 0.9s ease-in-out; }
+.slide { min-width:100%; }
+.prev, .next { position:absolute; top:50%; transform: translateY(-50%); background:rgba(0,0,0,0.5); color:#bd9f9f; border:none; padding:0.5rem; cursor:pointer; }
+.prev { left:10px; }
+.next { right:10px; }
+
+/* Products */
+.products { padding:2rem 1rem; }
+.product-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:1rem; }
+.product-card { background:#5598ea; padding:1rem; border:1px solid #8eabbe; text-align:center; }
+.product-card h3 { margin:0.5rem 0; }
+.product-card button { margin-top:0.5rem; padding:0.5rem 1rem; cursor:poi; }
+
+/* Content pages */
+.content { padding:2rem 1rem; }
+
+/* Footer */
+footer { text-align:center; padding:1rem; background:#333; color:#fff; margin-top:2rem; }
+
+/* Responsive */
+@media (max-width:600px) {
+  .navbar { flex-direction: column; gap:0.5rem; }
+}
